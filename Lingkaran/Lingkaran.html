@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <BODY BGCOLOR="bde0e0"></BODY>
+  <title>Luas Lingkaran</title>
+</head>
+<body>
+    <h1>Menghitung Luas Lingkaran</h1>
+    <form action="">
+        <label for="jari">Jari</label>
+        <input id="jari" type="number" placeholder="masukkan jari">
+        <br>
+        <br>
+        <input type="button" value="hitung" onclick="hitungLuasLingkaran();">
+        <br>
+        <br>
+        <label for="hasil">Luas</label>
+        <input id="luas" type="text">
+    </form>
+</body>
+<script>
+    function hitungLuasLingkaran() {
+        const jari = parseInt(document.getElementById('jari').value);
+        const luas = 3.14 * jari**2;
+        document.getElementById('luas').value = luas;
+    }
+</script>
+</html>
